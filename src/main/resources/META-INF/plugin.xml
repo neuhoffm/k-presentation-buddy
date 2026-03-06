@@ -1,0 +1,56 @@
+<!-- Copyright (c) 2025 Advntrs LLC -->
+<!-- SPDX-License-Identifier: MIT   -->
+<idea-plugin>
+
+    <id>com.advntrs.kpresentationbuddy</id>
+    <name>k-presentation-buddy</name>
+    <version>1.0.0</version>
+
+    <vendor email="support@advntrs.com" url="https://github.com/neuhoffm/k-presentation-buddy">
+        Advntrs LLC
+    </vendor>
+
+    <description><![CDATA[
+        Automatically type code during presentations in IntelliJ-based IDEs.<br/>
+        Select a plain-text script file and the plugin will type its contents
+        into the active editor, one character at a time, with a configurable
+        inter-keystroke delay.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+        <!-- Persistent settings service -->
+        <applicationService
+            serviceImplementation="com.advntrs.kpresentationbuddy.PresentationBuddySettings"/>
+
+        <!-- Typing simulation service -->
+        <applicationService
+            serviceImplementation="com.advntrs.kpresentationbuddy.PresentationBuddyService"/>
+
+        <!-- Settings page: Settings ▸ Tools ▸ Presentation Buddy -->
+        <applicationConfigurable
+            parentId="tools"
+            instance="com.advntrs.kpresentationbuddy.PresentationBuddyConfigurable"
+            id="com.advntrs.kpresentationbuddy.configurable"
+            displayName="Presentation Buddy"/>
+
+        <!-- Notification group (uses NotificationGroupManager — the current API) -->
+        <notificationGroup
+            id="k-presentation-buddy"
+            displayType="BALLOON"/>
+
+    </extensions>
+
+    <actions>
+        <action
+            id="com.advntrs.kpresentationbuddy.PresentationBuddyAction"
+            class="com.advntrs.kpresentationbuddy.PresentationBuddyAction"
+            text="Type Presentation Script…"
+            description="Select a script file and type its contents into the active editor.">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>

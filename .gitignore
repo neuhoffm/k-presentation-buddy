@@ -1,0 +1,19 @@
+# Gradle build outputs
+.gradle/
+build/
+
+# Gradle wrapper jar (keep gradlew and gradlew.bat, ignore local cache)
+gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
