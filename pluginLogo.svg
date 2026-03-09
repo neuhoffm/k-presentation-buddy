@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <defs>
+        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2eff58;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1ccc45;stop-opacity:1" />
+        </linearGradient>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="95" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+    <!-- Fast-forward icon with shadow -->
+    <g filter="url(#shadow)">
+        <!-- First triangle -->
+        <path d="M 45 60 L 45 140 L 90 100 Z" fill="url(#logoGradient)"/>
+        <!-- Second triangle -->
+        <path d="M 110 60 L 110 140 L 155 100 Z" fill="url(#logoGradient)"/>
+    </g>
+    <!-- Optional: Subtle border on triangles for definition -->
+    <path d="M 45 60 L 45 140 L 90 100 Z" fill="none" stroke="#1ccc45" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 110 60 L 110 140 L 155 100 Z" fill="none" stroke="#1ccc45" stroke-width="1.5" opacity="0.5"/>
+</svg>
