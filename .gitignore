@@ -1,0 +1,79 @@
+### Intellij ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+.idea/**/mongoSettings.xml
+.idea/**/sonarlint/
+.idea/**/sonarIssues.xml
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+.idea/$CACHE_FILE$
+.idea/codestream.xml
+.idea/azureSettings.xml
+.idea/httpRequests
+.idea/caches/build_file_checksums.ser
+.intellijPlatform
+
+### Kotlin ###
+*.class
+*.ctxt
+.mtj.tmp/
+hs_err_pid*
+replay_pid*
+
+### Java ###
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+### Gradle ###
+.gradle/
+**/build/
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+gradle-app.setting
+.gradletasknamecache
+*.hprof
+
+### IntelliJ Plugin Development ###
+build/idea-sandbox/
+build/distributions/
+build/classes/
+build/kotlin/
+build/resources/
+build/reports/
+build/tmp/
+build/instrumented/
+build/libs/
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Logs ###
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+### IDE ###
+.vscode/
+*.swp
+*.swo
+*~
+
+### Secrets / Signing Artifacts ###
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.jks
