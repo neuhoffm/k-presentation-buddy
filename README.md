@@ -1,5 +1,8 @@
 # K Presentation Buddy
 
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/30567-k-presentation-budd.svg)](https://plugins.jetbrains.com/plugin/30567-k-presentation-budd)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/30567-k-presentation-budd.svg)](https://plugins.jetbrains.com/plugin/30567-k-presentation-budd)
+
 **This project was inspired by [Presentation Buddy](https://github.com/mauricedb/presentation-buddy) and adapted for
 IntelliJ IDEs**
 
